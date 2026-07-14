@@ -1,0 +1,6 @@
+{
+  "name": "Alessandro Freccia - Síndico Profissional",
+  "description": "Website profissional e moderno para captação de condomínios e apresentação de serviços de sindicância de alto padrão em Balneário Camboriú - SC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
