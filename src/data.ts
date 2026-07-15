@@ -1,3 +1,6 @@
+import visitaTecnicaImg from "./assets/images/visita_tecnica_inspecao_1783966033561.jpg";
+import inspecaoInfraImg from "./assets/images/inspecao_infraestrutura_1783966050934.jpg";
+
 export interface ServiceItem {
   id: string;
   title: string;
@@ -288,14 +291,14 @@ export const GALLERY: GalleryItem[] = [
     id: "g3",
     title: "Visita Técnica e Inspeção de Obras",
     category: "manutencao",
-    imageUrl: "/src/assets/images/visita_tecnica_inspecao_1783966033561.jpg",
+    imageUrl: visitaTecnicaImg,
     description: "Acompanhamento presencial minucioso das manutenções preventivas e fiscalização de reformas em andamento.",
   },
   {
     id: "g4",
     title: "Inspeção Geral de Infraestrutura",
     category: "manutencao",
-    imageUrl: "/src/assets/images/inspecao_infraestrutura_1783966050934.jpg",
+    imageUrl: inspecaoInfraImg,
     description: "Checklists presenciais detalhados nas áreas comuns, garagens e casas de máquinas para evitar sinistros.",
   },
   {

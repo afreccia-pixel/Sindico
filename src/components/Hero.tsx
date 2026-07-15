@@ -1,9 +1,8 @@
 import { Phone, Mail, Trophy, Sparkles } from "lucide-react";
 import { motion } from "motion/react";
 import { PERSONAL_INFO } from "../data";
-
-const portraitImg = "/src/assets/images/Imagemperfil.png";
-const skylineImg = "/src/assets/images/balneario_skyline_1783948783224.jpg";
+import portraitImg from "../assets/images/Imagemperfil.png";
+import skylineImg from "../assets/images/balneario_skyline_1783948783224.jpg";
 
 interface HeroProps {
   onScrollTo: (elementId: string) => void;
