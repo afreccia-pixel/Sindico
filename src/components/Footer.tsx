@@ -1,4 +1,4 @@
-import { Shield, Mail, Phone, MapPin, Instagram, Linkedin, Search } from "lucide-react";
+import { Shield, Mail, Phone, MapPin, Search } from "lucide-react";
 import { PERSONAL_INFO } from "../data";
 
 interface FooterProps {
@@ -45,28 +45,6 @@ export default function Footer({ onScrollTo }: FooterProps) {
             <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
               Mais de 10 anos de experiência sólida em administração condominial de alto padrão, aplicando transparência, redução inteligente de custos e diálogo pacífico em Balneário Camboriú - SC.
             </p>
-
-            {/* Social channels */}
-            <div className="flex items-center space-x-3 pt-2" id="footer-socials">
-              <a
-                href={PERSONAL_INFO.instagram}
-                target="_blank"
-                rel="noreferrer"
-                className="p-2.5 glass-light hover:bg-white/10 border border-white/10 text-slate-400 hover:text-white rounded-xl transition-all duration-300"
-                title="Siga no Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="p-2.5 glass-light hover:bg-white/10 border border-white/10 text-slate-400 hover:text-white rounded-xl transition-all duration-300"
-                title="Conecte-se no LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Shortcuts (3-cols) */}
