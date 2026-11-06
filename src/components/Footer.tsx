@@ -1,4 +1,4 @@
-import { Shield, Mail, Phone, MapPin, Search } from "lucide-react";
+import { Shield, Mail, Phone, MapPin } from "lucide-react";
 import { PERSONAL_INFO } from "../data";
 
 interface FooterProps {
@@ -7,17 +7,6 @@ interface FooterProps {
 
 export default function Footer({ onScrollTo }: FooterProps) {
   const currentYear = new Date().getFullYear();
-
-  const seoKeywords = [
-    "Síndico Profissional Balneário Camboriú",
-    "Síndico Profissional SC",
-    "Administrador de Condomínio",
-    "Gestão Condominial",
-    "Condomínios em Balneário Camboriú",
-    "Administração de Condomínio",
-    "Síndico para Condomínios",
-    "Gestão de Condomínio de Alto Padrão",
-  ];
 
   return (
     <footer className="bg-navy-950 border-t border-white/10 pt-16 pb-8" id="site-footer">
@@ -100,22 +89,25 @@ export default function Footer({ onScrollTo }: FooterProps) {
 
         </div>
 
-        {/* SEO Google Optimization block */}
-        <div className="py-8 border-b border-white/5" id="footer-seo-keywords">
-          <div className="flex items-center space-x-2 text-slate-500 text-xs font-semibold mb-3">
-            <Search className="w-3.5 h-3.5" />
-            <span className="uppercase tracking-wider font-mono">Indexação e SEO (Google)</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {seoKeywords.map((kw, idx) => (
-              <span
-                key={idx}
-                className="text-[10px] text-slate-500 hover:text-slate-300 border border-white/5 hover:border-white/10 bg-white/5 hover:bg-white/10 px-2.5 py-1 rounded-md cursor-default transition-all duration-300"
-              >
-                {kw}
-              </span>
-            ))}
-          </div>
+        {/* Local service coverage */}
+        <div className="py-8 border-b border-white/5">
+          <h2 className="text-sm font-semibold text-slate-200 mb-3">
+            Síndico profissional em Balneário Camboriú e Praia Brava
+          </h2>
+          <p className="text-xs text-slate-400 leading-relaxed max-w-3xl">
+            Alessandro Freccia atende condomínios em Balneário Camboriú e na Praia Brava, em Itajaí.
+            A gestão inclui planejamento financeiro, prestação de contas, acompanhamento de
+            manutenções e comunicação com moradores e conselho. Solicite uma proposta
+            de acordo com as necessidades do seu condomínio.
+          </p>
+          <a
+            href={PERSONAL_INFO.whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block mt-4 text-sm font-semibold text-white underline underline-offset-4"
+          >
+            Conversar sobre a gestão do condomínio
+          </a>
         </div>
 
         {/* Copyright and signature */}
