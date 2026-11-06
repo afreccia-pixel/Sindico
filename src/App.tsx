@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -27,23 +26,6 @@ export default function App() {
       });
     }
   };
-
-  // Set page title and meta metadata on load for SEO
-  useEffect(() => {
-    document.title = "Alessandro Freccia - Síndico Profissional em Balneário Camboriú e Região";
-    
-    // Create or update meta description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.setAttribute(
-      'content',
-      'Alessandro Freccia - Gestão profissional de condomínios em Balneário Camboriú e SC. Economia, transparência, valorização patrimonial e excelência administrativa.'
-    );
-  }, []);
 
   return (
     <div className="min-h-screen bg-navy-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-navy-600 selection:text-white" id="main-application-frame">
